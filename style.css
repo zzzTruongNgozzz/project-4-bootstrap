@@ -2,3 +2,31 @@
   width: 50px;
   height: auto;
 }
+
+.full-width {
+  width: 100%;
+  height: auto;
+}
+
+.main-header {
+  padding-top: 105px;
+}
+
+.single-course-header {
+  padding-top: 120px;
+}
+
+.subscribe {
+  background-image: url(./img/subscribe.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.copyright {
+  background-color: black;
+}
+
+.blur-filter {
+  backdrop-filter: blur(8px);
+  background-color: #cccccc2b;
+}

@@ -95,7 +95,6 @@
 
     <title>Dự án 4 bootstrap</title>
   </head>
-
   <body class="bg-light">
     <!-- navbar -->
     <nav
@@ -231,37 +230,66 @@
       <div class="container">
         <div class="row align-items-center gx-md-5">
           <!-- khối trái -->
-          <div class="col-md-6">
-            <h1 class="fs-3 fw-normal">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              alias nulla minus sunt similique
-            </h1>
-
-            <p class="fs-5 fw-light text-secondary">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Consectetur, debitis mollitia laudantium tenetur, tempora
-              obcaecati provident voluptatum
-            </p>
-
-            <a
-              href="#!"
-              class="d-inline-flex justify-content-center align-items-center btn btn-success btn-sm"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="me-2"
-                width="20px"
-                height="20px"
-                viewBox="0 0 640 640"
+          <nav>
+            <div class="breadcrumb-holder">
+              <nav
+                aria-label="breadcrumb"
+                style="--bs-breadcrumb-divider: &quot;⟩&quot;"
+                ;=""
               >
-                <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
-                <path
-                  fill="#ffffff"
-                  d="M240 192C240 147.8 275.8 112 320 112C364.2 112 400 147.8 400 192C400 236.2 364.2 272 320 272C275.8 272 240 236.2 240 192zM448 192C448 121.3 390.7 64 320 64C249.3 64 192 121.3 192 192C192 262.7 249.3 320 320 320C390.7 320 448 262.7 448 192zM144 544C144 473.3 201.3 416 272 416L368 416C438.7 416 496 473.3 496 544L496 552C496 565.3 506.7 576 520 576C533.3 576 544 565.3 544 552L544 544C544 446.8 465.2 368 368 368L272 368C174.8 368 96 446.8 96 544L96 552C96 565.3 106.7 576 120 576C133.3 576 144 565.3 144 552L144 544z"
-                />
-              </svg>
-              Sign-up to get started
-            </a>
+                <ol
+                  class="breadcrumb text-bg-light border d-inline-flex align-items-center px-3 py-1 rounded-pill"
+                >
+                  <li class="breadcrumb-item">
+                    <a href="./index.html" class="small text-decoration-none"
+                      >Home</a
+                    >
+                  </li>
+
+                  <li class="breadcrumb-item active small" aria-current="page">
+                    Blog
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </nav>
+          <div class="col-md-6">
+            <div class="home-header-text-holder pe-md-5">
+              <h1 class="fs-3 fw-normal">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                alias nulla minus sunt similique
+              </h1>
+              <h2 class="fs-5 fw-light text-secondary">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Consectetur, debitis mollitia laudantium tenetur, tempora
+                obcaecati provident voluptatum
+              </h2>
+              <div class="col-md-10 my-3 courses-search-form">
+                <a
+                  href="#"
+                  class="btn btn-sm btn-success mt-2 mb-3 d-inline-flex align-items-center justify-content-center"
+                  data-bs-toggle="modal"
+                  data-bs-target="#subscribe_modal"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-envelope-check-fill me-2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z"
+                    ></path>
+                    <path
+                      d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"
+                    ></path>
+                  </svg>
+                  Sign-up to newsletters
+                </a>
+              </div>
+            </div>
           </div>
 
           <!-- khối phải -->
@@ -278,164 +306,11 @@
       </div>
     </header>
 
-    <!-- features -->
-    <section class="py-4 border-bottom border-3">
-      <div class="container">
-        <div class="row">
-          <!-- item 1 -->
-          <div class="col-md-4">
-            <div
-              class="d-flex align-items-center feature-item bg-white border rounded p-3"
-            >
-              <div>
-                <img src="./img/clock.png" alt="Lorem ipsum dolor sit amet" />
-              </div>
-
-              <div class="ms-2">
-                <h3 class="fs-5">Lorem ipsum dolor sit amet</h3>
-                <p class="small text-secondary">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Facere officiis modi similique nihil
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- item 2 -->
-          <div class="col-md-4">
-            <div
-              class="d-flex align-items-center feature-item bg-white border rounded p-3 mt-2 mt-md-0"
-            >
-              <div>
-                <img
-                  src="./img/responsive.png"
-                  alt="Lorem ipsum dolor sit amet"
-                />
-              </div>
-
-              <div class="ms-2">
-                <h3 class="fs-5">Lorem ipsum dolor sit amet</h3>
-                <p class="small text-secondary">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Facere officiis modi similique nihil
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- item 3 -->
-          <div class="col-md-4">
-            <div
-              class="d-flex align-items-center feature-item bg-white border rounded p-3 mt-2 mt-md-0"
-            >
-              <div>
-                <img src="./img/tick.png" alt="Lorem ipsum dolor sit amet" />
-              </div>
-
-              <div class="ms-2">
-                <h3 class="fs-5">Lorem ipsum dolor sit amet</h3>
-                <p class="small text-secondary">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Facere officiis modi similique nihil
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- course -->
     <section class="py-4 border-bottom border-3">
       <div class="container">
-        <!-- row top -->
-        <div class="row justify-content-center">
-          <div class="col-md-5">
-            <div class="text-md-center">
-              <h3 class="fs-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-                dolorem voluptatum. Temporibus amet mollitia
-              </h3>
-
-              <p class="small text-secondary">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident commodi quas adipisci quod? Similique, eligendi illum?
-                Eum modi rem dolorem minus nisi dolore ullam!
-              </p>
-
-              <a
-                href="#!"
-                class="d-inline-flex justify-content-center align-items-center btn btn-success btn-sm"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="me-2"
-                  width="20px"
-                  height="20px"
-                  viewBox="0 0 640 640"
-                >
-                  <!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
-                  <path
-                    fill="#ffffff"
-                    d="M320 144C254.8 144 201.2 173.6 160.1 211.7C121.6 247.5 95 290 81.4 320C95 350 121.6 392.5 160.1 428.3C201.2 466.4 254.8 496 320 496C385.2 496 438.8 466.4 479.9 428.3C518.4 392.5 545 350 558.6 320C545 290 518.4 247.5 479.9 211.7C438.8 173.6 385.2 144 320 144zM127.4 176.6C174.5 132.8 239.2 96 320 96C400.8 96 465.5 132.8 512.6 176.6C559.4 220.1 590.7 272 605.6 307.7C608.9 315.6 608.9 324.4 605.6 332.3C590.7 368 559.4 420 512.6 463.4C465.5 507.1 400.8 544 320 544C239.2 544 174.5 507.2 127.4 463.4C80.6 419.9 49.3 368 34.4 332.3C31.1 324.4 31.1 315.6 34.4 307.7C49.3 272 80.6 220 127.4 176.6zM320 400C364.2 400 400 364.2 400 320C400 290.4 383.9 264.5 360 250.7C358.6 310.4 310.4 358.6 250.7 360C264.5 383.9 290.4 400 320 400zM240.4 311.6C242.9 311.9 245.4 312 248 312C283.3 312 312 283.3 312 248C312 245.4 311.8 242.9 311.6 240.4C274.2 244.3 244.4 274.1 240.5 311.5zM286 196.6C296.8 193.6 308.2 192.1 319.9 192.1C328.7 192.1 337.4 193 345.7 194.7C346 194.8 346.2 194.8 346.5 194.9C404.4 207.1 447.9 258.6 447.9 320.1C447.9 390.8 390.6 448.1 319.9 448.1C258.3 448.1 206.9 404.6 194.7 346.7C192.9 338.1 191.9 329.2 191.9 320.1C191.9 309.1 193.3 298.3 195.9 288.1C196.1 287.4 196.2 286.8 196.4 286.2C208.3 242.8 242.5 208.6 285.9 196.7z"
-                  />
-                </svg>
-                View all courses
-              </a>
-            </div>
-          </div>
-        </div>
-
         <!-- row course -->
         <div class="row mt-4">
-          <div class="col-md-3">
-            <div class="list-group small mb-3">
-              <div
-                class="list-group-item list-group-item-action text-bg-light fw-bold"
-              >
-                Course Categories
-              </div>
-              <a
-                href="#!"
-                class="list-group-item list-group-item-action align-items-center d-flex justify-content-between"
-                >Premium Courses
-                <span class="badge rounded-pill text-bg-warning">14</span>
-              </a>
-              <a
-                href="#!"
-                class="list-group-item list-group-item-action align-items-center d-flex justify-content-between"
-                >Free Courses
-                <span class="badge rounded-pill text-bg-warning">1</span>
-              </a>
-            </div>
-
-            <div class="list-group small mb-3 mb-md-0">
-              <div
-                class="list-group-item list-group-item-action align-items-center text-bg-light fw-bold"
-              >
-                Course by Topics
-              </div>
-              <a
-                href="#!"
-                class="list-group-item list-group-item-action align-items-center d-flex justify-content-between"
-                >Coding
-                <span class="badge rounded-pill text-bg-warning">14</span>
-              </a>
-              <a
-                href="#!"
-                class="list-group-item list-group-item-action align-items-center d-flex justify-content-between"
-                >Programming
-                <span class="badge rounded-pill text-bg-warning">1</span>
-              </a>
-              <a
-                href="#!"
-                class="list-group-item list-group-item-action align-items-center d-flex justify-content-between"
-                >Design
-                <span class="badge rounded-pill text-bg-warning">1</span>
-              </a>
-            </div>
-          </div>
-
           <div class="col-md-9">
             <div class="list-group small">
               <div
@@ -698,67 +573,52 @@
               </a>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- other content -->
-    <section class="other-content py-4 border-bottom border-3">
-      <div class="container">
-        <div class="row align-items-center gx-md-5">
-          <!-- khối trái -->
-          <div class="col-md-6">
-            <h2 class="fs-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-              aliquam et impedit iure vitae tenetur adipisci placeat a
-              laudantium fugiat
-            </h2>
-
-            <p class="small text-secondary">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
-              atque quo enim deleniti doloribus distinctio facilis culpa non
-              inventore neque tenetur aliquam dolore, quis, ex modi repellat
-              magnam et eius!
-            </p>
-            <h2 class="fs-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </h2>
-
-            <p class="small text-secondary">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
-              atque quo enim deleniti doloribus distinctio facilis culpa non
-              inventore neque tenetur aliquam dolore, quis, ex modi repellat
-              magnam et eius!
-            </p>
-
-            <a
-              href="#"
-              class="btn btn-sm btn-success d-inline-flex align-items-center mb-md-0 mb-3"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="me-2 bi bi-info-circle-fill"
-                viewBox="0 0 16 16"
+          <div class="col-md-3">
+            <div class="list-group small mb-3">
+              <div
+                class="list-group-item list-group-item-action text-bg-light fw-bold"
               >
-                <path
-                  d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
-                ></path>
-              </svg>
-              Sign-up to get more info
-            </a>
-          </div>
+                Course Categories
+              </div>
+              <a
+                href="#!"
+                class="list-group-item list-group-item-action align-items-center d-flex justify-content-between"
+                >Premium Courses
+                <span class="badge rounded-pill text-bg-warning">14</span>
+              </a>
+              <a
+                href="#!"
+                class="list-group-item list-group-item-action align-items-center d-flex justify-content-between"
+                >Free Courses
+                <span class="badge rounded-pill text-bg-warning">1</span>
+              </a>
+            </div>
 
-          <!-- khối phải -->
-          <div class="col-md-6 mt-2 mt-md-0">
-            <div>
-              <img
-                class="rounded w-100"
-                src="./img/main-header.jpg"
-                alt="main-header"
-              />
+            <div class="list-group small mb-3 mb-md-0">
+              <div
+                class="list-group-item list-group-item-action align-items-center text-bg-light fw-bold"
+              >
+                Course by Topics
+              </div>
+              <a
+                href="#!"
+                class="list-group-item list-group-item-action align-items-center d-flex justify-content-between"
+                >Coding
+                <span class="badge rounded-pill text-bg-warning">14</span>
+              </a>
+              <a
+                href="#!"
+                class="list-group-item list-group-item-action align-items-center d-flex justify-content-between"
+                >Programming
+                <span class="badge rounded-pill text-bg-warning">1</span>
+              </a>
+              <a
+                href="#!"
+                class="list-group-item list-group-item-action align-items-center d-flex justify-content-between"
+                >Design
+                <span class="badge rounded-pill text-bg-warning">1</span>
+              </a>
             </div>
           </div>
         </div>
